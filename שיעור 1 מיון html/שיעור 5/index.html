@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4</title>
+    <!-- <script src="./index.js"> </script> -->
+    <script src="./functions.js"></script>
+</head>
+
+<body onload="handleOnLoadEvent()" id="myBody">
+    <h1 id="myH1">My Form</h1>
+    <label id="lbl1" for="inp1">Label1<input id="inp1" oninput="onInputChanged('inp1','inp2')" onclick="inp1Clicked()" type="text" ></label><br>
+    <label for="inp2">Label2<input id="inp2" ondblclick="doubleClicked()" oninput="onInputChanged('inp2','inp3')" type="number"></label><br>
+    <label for="inp3">Label3<input id="inp3" onchange="onInputChanged('inp3','slc')" type="text"></label><br><br>
+    <select id="slc" onchange="onInputChanged('slc','inp1')">
+        <option>ILS</option>
+        <option>usa</option>
+    </select>
+    <button>תרגיל 1</button>
+    <button>תרגיל 2</button>
+    <button>תרגיל 3</button>
+    <button>תרגיל 4</button>
+    <button>תרגיל 5</button>
+</body>
+
+</html>

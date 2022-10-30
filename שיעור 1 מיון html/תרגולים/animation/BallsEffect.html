@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balls Effect</title>
+</head>
+<body>
+
+    <div class="ballsBox">
+        <div class="balls">
+            <span style="--i:25"></span>
+            <span style="--i:24"></span>
+            <span style="--i:23"></span>
+            <span style="--i:22"></span>
+            <span style="--i:21"></span>
+            <span style="--i:20"></span>
+            <span style="--i:19"></span>
+            <span style="--i:18"></span>
+            <span style="--i:17"></span>
+            <span style="--i:16"></span>
+            <span style="--i:15"></span>
+            <span style="--i:14"></span>
+            <span style="--i:13"></span>
+            <span style="--i:14"></span>
+            <span style="--i:15"></span>
+            <span style="--i:16"></span>
+            <span style="--i:17"></span>
+            <span style="--i:18"></span>
+            <span style="--i:19"></span>
+            <span style="--i:20"></span>
+            <span style="--i:21"></span>
+            <span style="--i:22"></span>
+            <span style="--i:23"></span>
+            <span style="--i:24"></span>
+            <span style="--i:25"></span>
+            <span style="--i:26"></span>
+            <span style="--i:27"></span>
+            <span style="--i:28"></span>
+            <span style="--i:29"></span>
+            <span style="--i:30"></span>
+            <span style="--i:30"></span>
+            <span style="--i:29"></span>
+            <span style="--i:28"></span>
+            <span style="--i:27"></span>
+            <span style="--i:26"></span>
+            <span style="--i:25"></span>
+            <span style="--i:24"></span>
+            <span style="--i:23"></span>
+            <span style="--i:22"></span>
+            <span style="--i:21"></span>
+            <span style="--i:20"></span>
+            <span style="--i:19"></span>
+            <span style="--i:18"></span>
+            <span style="--i:17"></span>
+            <span style="--i:16"></span>
+            <span style="--i:15"></span>
+            <span style="--i:14"></span>
+            <span style="--i:13"></span>
+            <span style="--i:14"></span>
+            <span style="--i:15"></span>
+            <span style="--i:16"></span>
+            <span style="--i:17"></span>
+            <span style="--i:18"></span>
+            <span style="--i:19"></span>
+            <span style="--i:20"></span>
+            <span style="--i:21"></span>
+            <span style="--i:22"></span>
+            <span style="--i:23"></span>
+            <span style="--i:24"></span>
+            <span style="--i:25"></span>
+            
+        </div>
+    </div>
+
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            background: #2f2f2f;
+            min-height: 100vh;
+        } 
+        
+        .ballsBox
+        {
+            height: 100vh ;
+            width: 100%;
+            overflow: hidden;
+            z-index: -1000;
+        }
+        .balls
+        {
+            position: absolute;
+            display: flex;
+        }
+        .balls span
+        {
+            position: relative;
+            margin-left: 5px; 
+            height: 40px;
+            width: 40px;
+            background: skyblue;
+            border-radius: 50%;
+            box-shadow: 
+            0 0 50px skyblue,
+            0 0 100px skyblue,
+            0 0 150px skyblue;
+            animation: riseUp 5s linear infinite;
+            animation-duration: calc(60s / var(--i));
+        }    
+        .balls span:nth-child(3n+1)
+        {
+            height: 40px;
+            width: 40px;
+            background: azure;
+            border-radius: 50%;
+            box-shadow: 
+            0 0 50px azure,
+            0 0 100px azure,
+            0 0 150px azure;
+        }
+        .balls span:nth-child(3n+2)
+        {
+            height: 40px;
+            width: 40px;
+            background: #f54254;
+            border-radius: 50%;
+            box-shadow: 
+            0 0 50px #f54254,
+            0 0 100px #f54254,
+            0 0 150px #f54254;
+        }
+        
+        @keyframes riseUp
+        {
+            0%
+            {
+                transform: translateY(100vh) scale(0);
+            }
+            100%
+            {
+                transform: translateY(-10vh) scale(1);
+            }
+        }
+
+    </style>
+
+
+</body>
+</html>

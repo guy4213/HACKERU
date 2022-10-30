@@ -1,0 +1,43 @@
+body{
+   
+    background-image:
+    url("mdn_logo_only_color.png");
+    
+    text-align: center;
+}   
+
+
+title{
+
+    color: black;
+   
+}
+ input {
+    color: blue;
+
+}
+
+#date{
+
+
+    color: rgb(255, 0, 136);
+
+}
+
+.l1{
+    font-size: 25px;
+    color: green;
+}
+.l2{
+    font-size: 25px;
+    color: rgb(148, 5, 5);
+   
+}
+
+
+
+label {
+color: grey;
+font-size: 100px;
+}
+

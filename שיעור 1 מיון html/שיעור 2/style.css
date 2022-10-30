@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+}
+label {
+    color: red;
+    background-color: aliceblue;
+    color: gray;
+    /* תחמיד יקח את העיצוב האחרון שהוגדר!*/
+
+}
+h2 {
+    /* width: 120px; */
+    /* border-width: 2px;
+    border-color: black;
+    border-style: dotted; */
+    border-bottom: 2px blue dotted;
+}
+input {
+    color: #541264;
+}
+
+#inpName {
+    color: red;
+}
+
+.lbl1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.lbl2{
+    font-size: 13px;
+}

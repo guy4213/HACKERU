@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl"> <!-- הגדרת כתב עברי מימין לשמאל-->
+ 
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>   
+    p{
+        text-align: right;
+       color: rgb(0, 0, 0) ;
+       font-size: 20px;
+       font-weight: bold;
+      
+    }
+    body{ 
+        background-image: url(3a7d0b03-4969-4789-9b24-359f4295e8f6.jpg);
+     background-repeat: no-repeat; 
+     background-position: 100% 50%;
+     background-size: 1850px;
+    }
+ 
+    </style>
+    <script>
+       
+function printCurrentDate() {
+var x= new Date()
+   document.getElementById('mybody').innerHTML = mybody.innerHTML+x
+    
+}
+
+        function targil1() {
+            let x = prompt("הכנס מספר חיובי");
+            if (x > 0 && x <= 100) {
+                alert("small");
+            } else if (x > 100 && x <= 1000) {
+                alert("medium");
+            } else if (x > 1000) {
+                alert("large");
+            } else {
+                alert("negative");
+            }
+        }
+        function targil2() {
+            let firstname = prompt("כתוב את שמך הפרטי");
+            let lastname = prompt("כתוב את שם המשפחה שלך");
+
+            alert(" שלום " + firstname + " " + lastname + " ברוך שובך למערכת ");
+        }
+
+        function targil3() {
+            let pass = prompt("הקלד את סיסמתך");
+
+            if (pass == "hackeru123") {
+                alert("הזיהוי בוצע בהצלחה");
+            } else {
+                alert("הסיסמה שגויה,יש צורך בזיהוי");
+            }
+        }
+        function targil4() {
+            let age = prompt("רשום את גילך:");
+            if (age <= 0) {
+                alert("הגיל אינו תקין");
+            } else if (age < 16 && age > 0) {
+                alert("אינך מורשה להיכנס");
+            } else if (age >= 16 && age <= 18) {
+                alert("הנך רשאי להיכנס באישור הורה");
+            } else {
+                alert("אתה מוזמן להצטרף");
+            }
+        }
+
+        function targil5() {
+            let x = parseInt(prompt("הכנס מספר ראשון:"));
+
+            let y = parseInt(prompt("הכנס מספר שני:"));
+            let operator1 = prompt("הכנס אופרטור חיבור או חיסור :");
+            let res;
+
+            if (operator1 == "+") {
+                res = x + y;
+                alert(x + "+" + y + "=" + res);
+            } else if (operator1 == "-") {
+                res = x - y;
+                alert(x + "-" + y + "=" + res);
+            } else {
+                alert("האופרטור שהוקש לא נכון");
+            }
+        }
+    </script>
+
+    <title>מבחן סיום מיון</title>
+</head>
+
+<body style="text-align:end;" onload="printCurrentDate()" id="mybody"> 
+    <p id="myp1"> <br> שם פרטי:גיא    
+        <br>  שם משפחה:פרנסס
+        <br> מספר הפלאפון שלי הוא:0534271418 <br>
+        בפרויקט זה לא היה דבר מורכב במיוחד.אציין כי משום שלא למדנו מספיק את שפת הסיאסאס זה הקשה על עיצוב הפרוייקט ועל סגנונו<br>
+       
+        הדבר שהכי נהניתי ממנו במהלך הפרויקט הוא לתכנת ולאתר תקלות במהלך העבודה ולתקן אותן, שכן איתור התקלות ותיקונן מסייע לי להבין טוב יותר את שפת הגאבה 
+        <br>
+        סקריפט ואת שילובה עם שאר השפות בעיצוב ותכנון האתר. הנני מאמין שתחום זה תפור עליי מן הסיבה שיש בי עניין רב ומוטיבציה גדולה מאוד להצליח  
+        <br>
+       בכל דבר שבו אני עוסק, בעל יצירתיות בנוסף יודע ללמוד לבד ובעל קליטה מהירה . לסיכום אגיד כי נהניתי בשלב המיון, המרצה מאיר לימד בצורה טובה מאוד ומקצועית 
+        <br>
+        ובזכותו הבנתי טוב מאוד את החומר, השתדל לפשט אותו בצורה הכי טובה שיש ועל כך מגיע לו שאפו ענק ובהזדמנות זו אודה לו על שיעוריו ופועלו. 
+        <br>
+        מצפה להמשיך וללמוד רק עוד ועוד מכם, ומייחל להמשך שת"פ פורה. דרך צלחה לנו.
+
+
+    </p>
+    <button style="position:absolute; top: 300px; right: 860px; " onclick="targil1()">תרגיל 1</button>
+    <button style="position:absolute; top:300px; right:780px; "onclick="targil2()">תרגיל 2</button>
+    <button style="position:absolute; top:300px; right: 700px; "onclick="targil3()">תרגיל 3</button>
+    <button style="position:absolute; top:300px; right: 620px; "onclick="targil4()">תרגיל 4</button>
+    <button style="position:absolute; top:300px; right: 540px; "  onclick="targil5()">תרגיל 5</button>
+</body>
+
+</html>
